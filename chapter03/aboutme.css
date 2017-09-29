@@ -5,6 +5,7 @@ body {
   background-image: url('./cse326bg.jpg');
   background-repeat: no-repeat;
   background-position: top right;
+  background-attachment: fixed;
 }
 
 h1 {
