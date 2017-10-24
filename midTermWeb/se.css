@@ -1,0 +1,85 @@
+/*
+	Name: Yunhwan Na
+	ID: 2014037901
+	Year: 3
+*/
+
+
+/* specification 2a (write appropriate selector) */
+@font-face {
+	font-family: primer;
+	src: url('./font/primer.otf');
+}
+
+/* specification 2a & 2b */
+body {
+	font-family: primer;
+	background: #00ABD9;
+}
+
+/* specification 3a & 3b */
+#page {
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	border-bottom: 5px solid black;
+}
+
+/* specification 4a 4b (write appropriate selector) */
+nav > ul{
+	list-style: none;
+	text-align: center;
+	background: black;
+	font-weight: bold;
+	padding: 0;
+}
+
+/* specification 4a 4c (write appropriate selector) */
+nav > ul > li {
+	display: inline-block;
+	line-height: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+/* specification 4b (write appropriate selector) */
+nav > ul > li > a {
+ text-decoration: none;
+ color: #A690AF;
+}
+
+/* specification 5a (write appropriate selector) */
+article {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+/* specification 5b (write appropriate selector) */
+article h2 {
+	text-decoration: underline;
+	color: #00ABD9;
+}
+
+/* specification 6 */
+.mid {
+	text-align: center;
+}
+
+/* specification 7a, 7b, 7c, 7d, and 7e */
+#joinSE {
+	float: right;
+	font-weight: bold;
+	font-size: 190%;
+	background: #8BCBE3;
+	padding: .75em;
+	margin: 1em;
+}
+
+strong {
+	text-decoration: underline;
+}
+
+/* extra mark :
+ * examine 'screenshot.png' and find out which style is still not specified in CSS
+ * & create and apply an associated rule */
