@@ -1,0 +1,127 @@
+body{
+	background-image: url("background.png");
+	background-attachment: fixed;
+	font-family: sans-serif;
+	font-size: 8pt;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	text-shadow: 3px 3px #999999;
+}
+
+#banner {
+	background-image: url("bannerbg.png");
+	text-align: center;
+	background-repeat: repeat-x;
+	height: 50px;
+}
+
+#mainbody{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px gray solid;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+#overview{
+	width: 250px;
+	float: right;
+	background-color: #A2B964;
+}
+
+#overview + div{
+	width: 550px;
+	float: auto;
+}
+
+#overview > dl{
+	margin: 10pt;
+	font-family: sans-serif;
+	font-size: 8pt;
+}
+
+ul {
+	list-style-type: none;
+	list-style-position: outside;
+	padding: 0px;
+
+}
+
+
+#flag {
+	background-image: url("rbg.png");
+	height: 83px;
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+}
+
+#flag > img {
+	vertical-align: bottom;
+}
+
+#flag + div {
+	width: 47%;
+	float: left;
+	margin-left: 2%;
+}
+
+#rightcol {
+	width: 47%;
+	float: right;
+	margin-right: 2%;
+	margin-left: 0%;
+}
+
+div > p:nth-child(2n + 1):not(#foot) {
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: #E8DC9B;
+	border: 2px gray solid;
+	border-radius: 10px;
+	padding: 8px;
+	overflow: auto;
+}
+
+div > p:nth-child(2n):not(#foot){
+	margin-bottom: 20pt;
+	font-style: italic;
+}
+
+div > p:nth-child(2n):not(#foot):first-line{
+	font-style: normal;
+}
+
+p > img {
+	float: left;
+	margin-right: 5px;
+}
+
+#foot {
+	vertical-align: bottom;
+	background-color: #A2B964;
+	clear: both;
+	margin-bottom: 0px;
+	padding: 5px;
+	text-align: center;
+}
+
+#valid {
+	right: 0px;
+	bottom: 0px;
+	position: fixed;
+	opacity: 0.5;
+}
+
+dt {
+	font-weight: bold;
+	margin-top: 10pt;
+}

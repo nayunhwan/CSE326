@@ -1,0 +1,52 @@
+body > div{
+  border: solid 10px white;
+  background-color: white;
+}
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: url("http://selab.hanyang.ac.kr/courses/cse326/2016/labs/lab4_2016/images/3/blueTextureBG.jpg");
+}
+
+h1 + h2 {
+  color: #CCCCCC;
+  font-size: 14pt;
+}
+
+h2 > span{
+  border-bottom: dashed 2px blue;
+}
+
+div > div {
+  color: white;
+  text-align: right;
+  overflow: hidden;
+  background-color: #1D2475;
+}
+
+div + div{
+  border: solid 4px #1D2475;
+  border-radius: 15px;
+  background-color: #99CCFF;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: justify;
+  color: #3F3D42;
+  margin-left: 170px;
+}
+
+img.favimg {
+  float: right;
+}
+
+#secondcol {
+  float: left;
+  background-color: #3366CC;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+*>*:not(ul):not(body):not(div):not(#footer):hover {
+  background: #A6CE39;
+}
