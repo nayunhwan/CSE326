@@ -60,9 +60,7 @@
 		<?php
 		# if all the validation and check are passed
 		} else {
-			if ($_SERVER["REQUEST_METHOD"] == "GET") {
-			  # process a GET request
-			} elseif ($_SERVER["REQUEST_METHOD"] == "POST") {
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			  # process a POST request
 			  $name = $_POST["name"];
 				$id = $_POST["id"];
