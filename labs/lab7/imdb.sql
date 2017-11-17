@@ -1,5 +1,5 @@
 # search all roles played in the movie named Pi. (28 rows)
-SELECT DISTINCT * FROM roles r JOIN movies m ON r.movie_id = m.id WHERE name = 'Pi';
+SELECT role FROM roles r JOIN movies m ON r.movie_id = m.id WHERE name = 'Pi';
 
 # search first/last names of all actors who appeared in Pi along with their roles (28 rows)
 SELECT first_name, last_name 
@@ -18,16 +18,16 @@ JOIN movies m2 ON r2.movie_id = m2.id
 WHERE m1.name = 'Kill Bill: Vol. 1' and m2.name = 'Kill Bill: Vol. 2';
 
 # search for top 7 actors who have appeared in the most films, in descending order
-SELECT name
+SELECT first_name, last_name, count(movie_id)
 FROM actors a
 JOIN roles r ON r.actor_id = a.id
 JOIN movies m ON r.movie_id = m.id
-GROUP BY name
-ORDER BY count(first_name) DESC
+GROUP BY a.id
+ORDER BY count(movie_id) DESC
 LIMIT 7;
 
 # search for top 3 most popular genres of films, in descending order
-SELECT genre, count(name)
+SELECT genre
 FROM movies_genres g
 JOIN movies m ON m.id = g.movie_id
 GROUP BY genre

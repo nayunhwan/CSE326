@@ -1,7 +1,7 @@
 # Ex7
 
 # search all roles grades given in the course Computer Science 143 (4 rows)
-SELECT *
+SELECT grade
 FROM courses c
 JOIN grades g ON c.id = g.course_id
 WHERE name = 'Computer Science 143';
@@ -21,7 +21,7 @@ JOIN students s ON s.id = g.student_id
 WHERE grade <= 'B-';
 
 # search names of all courses that have been taken by 2 or more students (2 rows)
-SELECT c.name, count(g.student_id)
+SELECT c.name
 FROM courses c
 JOIN grades g ON c.id = g.course_id
 GROUP BY c.name
